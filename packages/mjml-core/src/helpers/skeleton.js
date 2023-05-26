@@ -23,8 +23,8 @@ export default function skeleton(options) {
     dir,
   } = options
 
-  const langAttribute = lang ? `lang="${lang}" ` : ''
-  const dirAttribute = dir ? `dir="${dir}" ` : ''
+  const langAttribute = lang ? `lang="${lang}" ` : 'lang="und"'
+  const dirAttribute = dir ? `dir="${dir}" ` : 'dir="auto"'
 
   return `${beforeDoctype ? `${beforeDoctype}\n` : ''}<!doctype html>
 <html ${langAttribute}${dirAttribute}xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
